@@ -28,5 +28,7 @@ void eye_dir_open(const wchar_t *eye_szDirectoryPath) {
             (LPWSTR) &eye_szMsgBuf, 0, NULL);
         wprintf(L"Error %lu: %s\n", eye_dwError, eye_szMsgBuf);
         LocalFree(eye_szMsgBuf);
+        CloseHandle(eye_hDirectory);
     }
+    CloseHandle(eye_hDirectory);
 }
