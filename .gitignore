@@ -1,0 +1,36 @@
+# ==============================================================================
+# FilesRPG — Git Exclusions
+# ==============================================================================
+
+# --- Build artifacts ---
+/[Bb]uild/
+/cmake-build-*/
+/.cmake/
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+
+# --- Conan ---
+/conan/
+conan.lock
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iws
+*.iml
+
+# --- Doxygen output ---
+/docs/html/
+/docs/latex/
+Doxyfile.bak
+
+# --- Runtime artifacts ---
+*.dat
+*.log
+
+# --- Windows OS noise ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini

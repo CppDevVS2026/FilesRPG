@@ -1,0 +1,11 @@
+PROJECT_NAME           = "FilesRPG — Filesystem World Simulator"
+PROJECT_NUMBER         = @PROJECT_VERSION@
+OUTPUT_DIRECTORY       = @DOXYGEN_OUT_DIR@
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+INPUT                  = @DOXYGEN_IN_DIR@/src @DOXYGEN_IN_DIR@/include @DOXYGEN_IN_DIR@/apps
+RECURSIVE              = YES
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg

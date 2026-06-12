@@ -1,0 +1,3 @@
+[submodule "extern/yklib"]
+	path = extern/yklib
+	url = https://gitlab.com/yokim-software/yklib.git
