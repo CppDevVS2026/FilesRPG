@@ -8,7 +8,7 @@
 #include "the_eye.h"
 
 int main(void) {
-    wprintf(L"FilesRPG v0.0.0 — engine starting...");
+    wprintf(L"FilesRPG v0.0.0 - engine starting...\n");
     eye_dir_open(L"C:\\Users\\JcTheKing\\CLionProjects\\FilesRPG");
 
 
