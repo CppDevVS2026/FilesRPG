@@ -34,3 +34,5 @@ Doxyfile.bak
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+.cache/
