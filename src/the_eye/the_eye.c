@@ -14,21 +14,6 @@
  * @return void
  */
 void eye_dir_open(const wchar_t *eye_szDirectoryPath) {
-    if (eye_szDirectoryPath == NULL) {
-        const DWORD eye_dwError = GetLastError();
-        LPWSTR eye_lpMessageBuffer = NULL;
-
-        // TODO create function for error handling with FormatMessageW
-        FormatMessageW(
-            FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM,
-            NULL, eye_dwError, 0,
-            (LPWSTR) &eye_lpMessageBuffer, 0, NULL);
-
-        wprintf(L"[Eye] Error %lu: %s\n", eye_dwError, eye_lpMessageBuffer);
-        LocalFree(eye_lpMessageBuffer);
-        return;
-    }
-
     const HANDLE eye_hDirectory = CreateFileW(
         eye_szDirectoryPath,
         FILE_LIST_DIRECTORY,
