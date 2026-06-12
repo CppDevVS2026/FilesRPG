@@ -17,11 +17,8 @@ target_include_directories(game_launcher
         ${CMAKE_SOURCE_DIR}/include
 )
 
-target_link_libraries(game_launcher
-    PRIVATE
-        the_eye
-        yklib
-)
+# Link modules as you build them:
+# target_link_libraries(game_launcher PRIVATE the_eye yklib)
 
 set_target_properties(game_launcher PROPERTIES
     OUTPUT_NAME "FilesRPG"

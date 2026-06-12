@@ -49,14 +49,14 @@ if(WIN32)
     )
 endif()
 
-# -- yklib (Git submodule) ----------------------------------------------------
-add_subdirectory(extern/yklib)
+# -- yklib (Git submodule — uncomment when you start using it) -----------------
+# add_subdirectory(extern/yklib)
 
 # -- Project modules -----------------------------------------------------------
 add_subdirectory(src/the_eye)
 add_subdirectory(src/citizen)
 add_subdirectory(apps/game_launcher)
-add_subdirectory(tests)
+# add_subdirectory(tests)  # Uncomment when you add test files
 
 # -- Docs (optional) -----------------------------------------------------------
 find_package(Doxygen OPTIONAL_COMPONENTS dot)
