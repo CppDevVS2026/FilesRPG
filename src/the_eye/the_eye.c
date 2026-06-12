@@ -18,6 +18,7 @@ void eye_dir_open(const wchar_t *eye_szDirectoryPath) {
         const DWORD eye_dwError = GetLastError();
         LPWSTR eye_lpMessageBuffer = NULL;
 
+        // TODO create function for error handling with FormatMessageW
         FormatMessageW(
             FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM,
             NULL, eye_dwError, 0,
