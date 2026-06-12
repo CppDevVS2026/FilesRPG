@@ -10,6 +10,7 @@ file(GLOB LAUNCHER_SOURCES CONFIGURE_DEPENDS
 
 add_executable(game_launcher
     ${LAUNCHER_SOURCES}
+        hello.c
 )
 
 target_include_directories(game_launcher
